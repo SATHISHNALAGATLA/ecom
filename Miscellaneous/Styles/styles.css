@@ -1,0 +1,210 @@
+/* font-family: 'Roboto', sans-serif;
+font-family: 'Teko', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#wrapper{
+    height:100vh;
+    overflow-x: hidden;
+    perspective: 10px;
+}
+
+.main-container{
+    position:relative;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform-style: preserve-3d;
+    z-index: -1;
+}
+
+.background{
+    transform: translateZ(-40px) scale(5);
+}
+
+.foreground{
+    transform: translateZ(-20px) scale(3);
+}
+
+.background{
+    position:absolute;
+    height:100%;
+    width:100%;
+    object-fit: cover;
+    z-index:-1;
+}
+
+.foreground{
+    position:absolute;
+    /* height:100%;
+    width:100%; */
+    object-fit: cover;
+    z-index:-1;
+    margin-top: 950px;
+
+}
+
+.main-h1{
+    position: absolute;
+    top:5rem;
+text-align: center;
+    font-size:10rem;
+    letter-spacing:4px;
+    color:white;
+    text-shadow:0 0 10px rgba(0,0,0,0.3);
+}
+
+@media only screen and (max-width: 600px) {
+    .main-h1 {
+      font-size: 7rem;
+      text-align: center;
+    }
+  }
+
+/* section */
+
+section{
+    background-color: #fefefe;
+    padding:2rem 0;
+}
+
+.h1-far{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Teko', sans-serif;
+    text-align: center;
+    font-size: 6rem;
+}
+.h1-far-span{
+    color: #A0D8B3;
+}
+
+.bn53 {
+    background-color: #A0D8B3;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: bn53bounce 4s infinite;
+    cursor: pointer;
+    border: #A0D8B3;
+    border-radius: 5px;
+box-shadow: 5px 5px #E5F9DB;
+    color: #fefefe;
+    transition: 0.3s;
+  }
+  
+  .bn53:hover{
+    
+    background-color: #E5F9DB;
+    box-shadow: 5px 5px #A0D8B3;
+    color: black;
+
+  }
+  @keyframes bn53bounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+  
+    10% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1);
+    }
+  
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+  
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+  
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+  
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+  
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  /* buyer-section */
+  .bn53-1 {
+    background-color: #f1a61a;
+    padding: 7px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    animation: bn53bounce 4s infinite;
+    cursor: pointer;
+    border: #f1a61a;
+    border-radius: 5px;
+box-shadow: 5px 5px #e2b156;
+    color: #fefefe;
+    transition: 0.3s;
+  }
+  
+  .bn53-1:hover{
+    
+    background-color: #e2b156;
+    box-shadow: 5px 5px #f1a61a;
+    color: black;
+
+  }
+  @keyframes bn53bounce {
+    5%,
+    50% {
+      transform: scale(1);
+    }
+  
+    10% {
+      transform: scale(1);
+    }
+  
+    15% {
+      transform: scale(1);
+    }
+  
+    20% {
+      transform: scale(1) rotate(-5deg);
+    }
+  
+    25% {
+      transform: scale(1) rotate(5deg);
+    }
+  
+    30% {
+      transform: scale(1) rotate(-3deg);
+    }
+  
+    35% {
+      transform: scale(1) rotate(2deg);
+    }
+  
+    40% {
+      transform: scale(1) rotate(0);
+    }
+  }
+
+  /* about-section */
+
+  .about-section{
+    background: rgb(241,166,26);
+background: linear-gradient(90deg, rgba(241,166,26,1) 0%, rgba(160,216,179,1) 100%);
+  }
+
+
+  /* farmer register */
+
+  .farmer-bg-reg{
+    background-image: url(../Images/farmerregbg.jpg);
+    background-size: cover;
+  }
